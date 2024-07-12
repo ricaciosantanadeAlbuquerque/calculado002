@@ -3,7 +3,7 @@ void main(){
   menu();
 }
 
-void menu(){
+int menu(){
   print('======Menu Opção======');
   print('Digite [1] para somar ');
   print('Digite [2] para subtrair');
@@ -16,6 +16,7 @@ void menu(){
     if(entradaDados.isNotEmpty){
       try{
        int op = int.parse(entradaDados);
+       return op;
       }catch(e){
         throw Exception('ERRO!!! Não foi possível converte $entradaDados para inteiro.');
       }
