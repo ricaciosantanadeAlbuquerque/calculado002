@@ -30,19 +30,40 @@ int menu(){
   }
 }
 
-void escolha({required int op}){
-    
+void escolha({required int op}){  
     switch(op){
       case 1:
+      print('Digite primeiro valor');
+      String? entrada1 = stdin.readLineSync();
+      print('Digite o segundo valor');
+      String? entrada2 = stdin.readLineSync();
       break;
       case 2:
+      print('Digite primeiro valor');
+      String? entrada1 = stdin.readLineSync();
+      print('Digite o segundo valor');
+      String? entrada2 = stdin.readLineSync();
       break;
       case 3:
+      print('Digite primeiro valor');
+      String? entrada1 = stdin.readLineSync();
+      print('Digite o segundo valor');
+      String? entrada2 = stdin.readLineSync();
       break;
       case 4:
+      print('Digite primeiro valor');
+      String? entrada1 = stdin.readLineSync();
+      print('Digite o segundo valor');
+      String? entrada2 = stdin.readLineSync();
       break;
       case 5:
+      print('Digite primeiro valor');
+      String? entrada1 = stdin.readLineSync();
+      print('Digite o segundo valor');
+      String? entrada2 = stdin.readLineSync();
       break;
       default:
+      print('Valor fora da faixa !!');
+      exit(0);
     }
 }
