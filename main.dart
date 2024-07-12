@@ -29,3 +29,103 @@ int menu(){
     exit(0);
   }
 }
+
+void escolha({required int op}){  
+    switch(op){
+      case 1:
+      print('Digite primeiro valor');
+      String? entrada1 = stdin.readLineSync();
+      print('Digite o segundo valor');
+      String? entrada2 = stdin.readLineSync();
+
+      if(entrada1 != null && entrada2 != null){
+        if(entrada1.isNotEmpty && entrada2.isNotEmpty){
+           try{
+             num num1 = num.parse(entrada1);
+             num num2 = num.parse(entrada2);
+           }catch(e){
+            throw Exception('ERRO! Os valores $entrada1 e $entrada2 não podem ser convertidos.');
+           }
+        }else{
+          print('ERRO!!! Valor vazio !!');
+          exit(0);
+        }
+      }else{
+       print('ERRO! valor nulo!! Digite valores válidos.');
+       exit(0);
+      }
+      break;
+      case 2:
+      print('Digite primeiro valor');
+      String? entrada1 = stdin.readLineSync();
+      print('Digite o segundo valor');
+      String? entrada2 = stdin.readLineSync();
+
+       if (entrada1 != null && entrada2 != null) {
+        if (entrada1.isNotEmpty && entrada2.isNotEmpty) {
+          try {
+            num num1 = num.parse(entrada1);
+            num num2 = num.parse(entrada2);
+          } catch (e) {
+            throw Exception('ERRO! Os valores $entrada1 e $entrada2 não podem ser convertidos.');
+          }
+        } else {
+          print('ERRO!!! Valor vazio !!');
+          exit(0);
+        }
+      } else {
+        print('ERRO! valor nulo!! Digite valores válidos.');
+        exit(0);
+      }
+      break;
+      case 3:
+      print('Digite primeiro valor');
+      String? entrada1 = stdin.readLineSync();
+      print('Digite o segundo valor');
+      String? entrada2 = stdin.readLineSync();
+
+       if (entrada1 != null && entrada2 != null) {
+        if (entrada1.isNotEmpty && entrada2.isNotEmpty) {
+          try {
+            num num1 = num.parse(entrada1);
+            num num2 = num.parse(entrada2);
+          } catch (e) {
+            throw Exception('ERRO! Os valores $entrada1 e $entrada2 não podem ser convertidos.');
+          }
+        } else {
+          print('ERRO!!! Valor vazio !!');
+          exit(0);
+        }
+      } else {
+        print('ERRO! valor nulo!! Digite valores válidos.');
+        exit(0);
+      }
+      break;
+      case 4:
+      print('Digite primeiro valor');
+      String? entrada1 = stdin.readLineSync();
+      print('Digite o segundo valor');
+      String? entrada2 = stdin.readLineSync();
+
+       if (entrada1 != null && entrada2 != null) {
+        if (entrada1.isNotEmpty && entrada2.isNotEmpty) {
+          try {
+            num num1 = num.parse(entrada1);
+            num num2 = num.parse(entrada2);
+          } catch (e) {
+            throw Exception('ERRO! Os valores $entrada1 e $entrada2 não podem ser convertidos.');
+          }
+        } else {
+          print('ERRO!!! Valor vazio !!');
+          exit(0);
+        }
+      } else {
+        print('ERRO! valor nulo!! Digite valores válidos.');
+        exit(0);
+      }    
+      break;
+      case 5:
+      print('Valor [$op] fora da faixa !!');
+      exit(0);
+    }
+}
