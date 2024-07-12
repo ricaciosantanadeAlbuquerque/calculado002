@@ -125,7 +125,7 @@ void escolha({required int op}){
       }    
       break;
       case 5:
-      print('Valor fora da faixa !!');
+      print('Valor [$op] fora da faixa !!');
       exit(0);
     }
 }
