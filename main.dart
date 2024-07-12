@@ -29,3 +29,7 @@ int menu(){
     exit(0);
   }
 }
+
+void escolha({required int op}){
+
+}
