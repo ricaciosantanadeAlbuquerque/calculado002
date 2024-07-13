@@ -141,3 +141,7 @@ num subtracao({required num num1, required num num2}){
   var result = num1 - num2 ;
   return result;
 }
+
+void multiplicacao({required num num1,required num num2}){
+ var result = num1 * num2 ;
+}
