@@ -67,6 +67,7 @@ void escolha({required int op}){
           try {
             num num1 = num.parse(entrada1);
             num num2 = num.parse(entrada2);
+            print(subtracao(num1: num1, num2: num2));
           } catch (e) {
             throw Exception('ERRO! Os valores $entrada1 e $entrada2 não podem ser convertidos.');
           }
@@ -136,6 +137,7 @@ num soma({required num num1,required num num2}){
    return result;
 }
 
-void subtracao({required num num1, required num num2}){
+num subtracao({required num num1, required num num2}){
   var result = num1 - num2 ;
+  return result;
 }
