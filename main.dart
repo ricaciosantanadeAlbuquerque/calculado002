@@ -1,6 +1,6 @@
 import 'dart:io';
 void main(){
-  menu();
+  escolha(op: menu());
 }
 
 int menu(){
