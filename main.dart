@@ -129,7 +129,10 @@ void escolha({required int op}){
       }    
       break;
       case 5:
-      print('Valor [$op] fora da faixa !!');
+      print('O programa será encerrado.');
+      exit(0);
+      default:
+      print('Valor fora da faixa');
       exit(0);
     }
 }
