@@ -129,3 +129,7 @@ void escolha({required int op}){
       exit(0);
     }
 }
+
+void soma({required num num1,required num num2}){
+  
+}
